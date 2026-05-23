@@ -25,8 +25,10 @@ header, main, footer {
 }
 
 header {
-  text-align: left;
+  background-color: var(--cor-primaria);
+  color: var(--cor-destaque2);
   padding: 1rem;
+  text-align: center;
 }
 
 header img {
@@ -39,12 +41,18 @@ nav ul {
 }
 
 nav ul li {
-  margin: 4px 0;
+  display: inline-block;
+  margin: 0 10px;
 }
 
 nav ul li a {
-  color: blue;
-  text-decoration: underline;
+  color: var(--cor-destaque2);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: var(--cor-secundaria);
 }
 
 h1, h2 {
@@ -85,7 +93,7 @@ nav, p, section, article {
   bottom: 20px;
   left: 20px;
   right: 20px;
-  background-color: var(--cor-destaque2);
+  background-color: var(--cor-secundaria);
   padding: 1rem;
 }
 
@@ -98,7 +106,7 @@ nav, p, section, article {
 footer {
   background-color: var(--cor-primaria);
   color: var(--cor-destaque2);
-  text-align: left;
+  text-align: center;
   padding: 1rem;
 }
 
@@ -106,13 +114,12 @@ footer p {
   margin-bottom: 1rem;
 }
 
-.redes-sociais a {
+.socialmedia a {
   text-decoration: none;
 }
 
-.redes-sociais img {
-  width: 150px;
+.socialmedia img {
+  width: 60px;
   height: auto;
-  display: block;
-  margin: 10px 0;
+  margin: 0 10px;
 }
