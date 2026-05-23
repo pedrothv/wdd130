@@ -25,10 +25,8 @@ header, main, footer {
 }
 
 header {
-  background-color: var(--cor-primaria);
-  color: var(--cor-destaque2);
+  text-align: left;
   padding: 1rem;
-  text-align: center;
 }
 
 header img {
@@ -41,18 +39,12 @@ nav ul {
 }
 
 nav ul li {
-  display: inline-block;
-  margin: 0 10px;
+  margin: 4px 0;
 }
 
 nav ul li a {
-  color: var(--cor-destaque2);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  color: var(--cor-secundaria);
+  color: blue;
+  text-decoration: underline;
 }
 
 h1, h2 {
@@ -93,7 +85,7 @@ nav, p, section, article {
   bottom: 20px;
   left: 20px;
   right: 20px;
-  background-color: var(--cor-secundaria);
+  background-color: var(--cor-destaque2);
   padding: 1rem;
 }
 
@@ -106,7 +98,7 @@ nav, p, section, article {
 footer {
   background-color: var(--cor-primaria);
   color: var(--cor-destaque2);
-  text-align: center;
+  text-align: left;
   padding: 1rem;
 }
 
@@ -114,12 +106,13 @@ footer p {
   margin-bottom: 1rem;
 }
 
-.socialmedia a {
+.redes-sociais a {
   text-decoration: none;
 }
 
-.socialmedia img {
-  width: 60px;
+.redes-sociais img {
+  width: 150px;
   height: auto;
-  margin: 0 10px;
+  display: block;
+  margin: 10px 0;
 }
