@@ -10,14 +10,49 @@ body {
   text-align: left;
 }
 
-main {
+/* Etapas 2 e 8: max-width e centralização para header, footer e .grid */
+header, footer, .grid {
   max-width: 840px;
+  margin: 0 auto;
+}
+
+/* Etapa 3: Flex na nav — links horizontais com espaçamento uniforme */
+nav {
+  background-color: steelblue;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Etapas 4 e 5: Links da nav como blocos sem decoração */
+nav a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Etapa 9: Grid para posicionar aside à esquerda e main à direita */
+.grid {
+  display: grid;
+  align-items: start;
+}
+
+main {
+  grid-column: 2/3;
   margin: 1rem;
   text-align: left;
 }
 
+/* Etapa 6: Borda inferior no h1 */
 main h1 {
   text-align: left;
+  border-bottom: 2px solid steelblue;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 main img {
@@ -41,15 +76,21 @@ ul.caixa {
   text-align: left;
 }
 
-aside.caixa {
+/* Etapa 9: aside à esquerda (coluna 1, linha 1) */
+aside {
   width: 20rem;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+aside.caixa {
   margin: 1rem;
   border: 1px solid rgb(0 0 0 / 0.2);
   padding: 1rem;
   background-color: #eee;
   color: #333;
   text-align: left;
-  position: relative;
 }
 
 aside h2 {
@@ -72,8 +113,7 @@ p {
 }
 
 footer {
-  margin-top: 20px;
   border-top: 1px solid #ccc;
   text-align: left;
-  padding-left: 1rem;
+  padding: 1rem;
 }
