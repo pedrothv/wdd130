@@ -59,8 +59,8 @@ nav a {
 }
 
 nav a:hover {
-  background-color: var(--cor-secundaria);
-  color: var(--cor-destaque1);
+  background-color: #fff;
+  color: var(--cor-primaria);
 }
 
 h1, h2 {
