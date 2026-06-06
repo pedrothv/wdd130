@@ -1,10 +1,10 @@
 :root {
-  --primary-color: #055a05;
-  --secondary-color: #f4a261;
-  --accent-color1: #264653;
-  --accent-color2: #e9c46a;
-  --title-font: "Times New Roman", "Georgia", serif;
-  --body-font: Arial, Helvetica, sans-serif;
+  --cor-primaria: #055a05;
+  --cor-secundaria: #f4a261;
+  --cor-destaque1: #264653;
+  --cor-destaque2: #e9c46a;
+  --fonte-titulo: "Times New Roman", Georgia, serif;
+  --fonte-body: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -14,18 +14,23 @@
 }
 
 body {
-  font-family: var(--body-font);
-  color: var(--accent-color1);
+  font-family: var(--fonte-body);
+  color: var(--cor-destaque1);
   background-color: #fff;
 }
 
-header, main, footer {
-  max-width: 840px;
+header,
+main,
+footer {
+  width: 840px;
   margin: 0 auto;
 }
 
 header {
-  text-align: left;
+  display: grid;
+  grid-template-columns: 180px auto;
+  align-items: center;
+  background-color: var(--cor-destaque2);
   padding: 1rem;
 }
 
@@ -34,81 +39,166 @@ header img {
   height: auto;
 }
 
-nav {
-  margin-top: 1rem;
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
 }
 
 nav a {
-  color: var(--primary-color);
+  color: var(--cor-primaria);
   text-decoration: none;
-  margin-right: 1rem;
   font-weight: bold;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border-radius: 4px;
 }
 
 nav a:hover {
-  color: var(--secondary-color);
+  background-color: var(--cor-secundaria);
+  color: #fff;
 }
 
-h1, h2 {
-  font-family: var(--title-font);
-  color: var(--primary-color);
+h1,
+h2 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-primaria);
   text-align: center;
   margin: 1rem 0;
 }
 
 .hero {
   position: relative;
+  margin-bottom: 1.5rem;
 }
 
-.hero img {
+.hero > img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.hero h1 {
+.hero > h1 {
   position: absolute;
-  top: 20px;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent-color1);
+  margin: 0;
+  padding: 0.75rem 1rem;
+  background-color: var(--cor-destaque1);
   color: #fff;
+  opacity: 0.85;
 }
 
 .hero article {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-  background-color: var(--secondary-color);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--cor-secundaria);
   padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero article p {
+  flex: 1;
+  line-height: 1.6;
 }
 
 .hero article img {
-  float: right;
   width: 125px;
-  margin-left: 1rem;
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
 }
 
-footer {
-  background-color: var(--primary-color);
-  color: var(--accent-color2);
-  text-align: center;
+.historia {
+  background-color: var(--cor-destaque2);
   padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
 }
 
-footer p {
+.historia h2 {
   margin-bottom: 1rem;
 }
 
-.socialmedia a {
-  text-decoration: none;
+.historia-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 200px 1fr;
+  align-items: center;
+  gap: 1rem;
 }
 
-.socialmedia img {
-  width: 40px;
-  height: 40px;
-  margin: 0 10px;
+.historia-conteudo p {
+  line-height: 1.6;
+}
+
+.historia-conteudo img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.aventura {
+  margin-bottom: 1.5rem;
+}
+
+.aventura h2 {
+  margin-bottom: 1rem;
+}
+
+.galeria-aventura {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.galeria-aventura figure {
+  flex: 1;
+  text-align: center;
+}
+
+.galeria-aventura img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.galeria-aventura figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--cor-destaque1);
+  font-weight: bold;
+}
+
+footer {
+  background-color: var(--cor-primaria);
+  color: var(--cor-destaque2);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+.redes-sociais img {
+  width: 32px;
+  height: 32px;
 }
