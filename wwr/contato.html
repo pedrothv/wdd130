@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companhia de Rafting em Corredeiras | Fale Conosco</title>
+    <meta name="description"
+        content="Entre em contato com a Companhia de Rafting em Corredeiras — informações de endereço, telefone, e-mail e formulário para dúvidas e reservas.">
+    <meta name="author" content="Pedro Pereira">
+    <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagens/rio-abaixo.png" alt="Logotipo da Companhia de Rafting em Corredeiras">
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="passeios.html">Viagens</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contato">
+            <h1>Companhia de Rafting</h1>
+            <p>Rua Principal do Rio, 123<br>Rio de Janeiro, RJ</p>
+            <p><strong>+55 21 2345-6789</strong><br>contato@rioabaixo.com</p>
+
+            <div class="contato-grid">
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d197914.9484196263!2d-43.402149165364165!3d-22.819904933068138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1780775920366!5m2!1spt-BR!2sbr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <form action="#" method="post">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite aqui" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite aqui" required>
+
+                    <fieldset>
+                        <legend>Mensagem</legend>
+                        <label><input type="radio" name="finalidade" value="duvida"> Dúvidas</label>
+                        <label><input type="radio" name="finalidade" value="reserva"> Reserva</label>
+                        <label><input type="radio" name="finalidade" value="sugestao"> Sugestão</label>
+                    </fieldset>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite aqui" required></textarea>
+
+                    <label class="newsletter">
+                        <input type="checkbox" name="newsletter"> Quero receber a newsletter mensal
+                    </label>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="equipe">
+            <h2>Estamos Aqui para Servi-lo</h2>
+            <div class="galeria-equipe">
+                <figure>
+                    <img src="imagens/tomas.jpg" alt="Perfil do Funcionário">
+                    <figcaption>Tomás Merino - Guia Chefe</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/heitor.jpg" alt="Perfil do Funcionário">
+                    <figcaption>Heitor Merino - Instrutor</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/vicente.jpg" alt="Perfil do Funcionário">
+                    <figcaption>Vicente Pereira - Gerente</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>©2026 Companhia de Rafting em Corredeiras | Pedro Pereira</p>
+        <nav class="redes-sociais">
+            <a href="https://facebook.com" target="_blank">
+                <img src="imagens/facebook-logo.svg" alt="Ícone do Facebook">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="imagens/linkedin-logo.svg" alt="Ícone do LinkedIn">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="imagens/instagram-logo.svg" alt="Ícone do Instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
