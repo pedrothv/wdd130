@@ -18,7 +18,7 @@
             <ul>
                 <li><a href="index.html">Página Inicial</a></li>
                 <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="passeios.html">Viagens</a></li>
+                <li><a href="passeios.html">Passeios</a></li>
                 <li><a href="contato.html">Fale Conosco</a></li>
             </ul>
         </nav>
@@ -26,15 +26,16 @@
 
     <main>
         <section class="contato">
-            <h1>Companhia de Rafting</h1>
+            <h1>Rio Abaixo Rafting</h1>
             <p>Rua Principal do Rio, 123<br>Rio de Janeiro, RJ</p>
             <p><strong>+55 21 2345-6789</strong><br>contato@rioabaixo.com</p>
 
             <div class="contato-grid">
                 <div class="mapa">
+
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d197914.9484196263!2d-43.402149165364165!3d-22.819904933068138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1780775920366!5m2!1spt-BR!2sbr"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="600" height="450" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
@@ -47,19 +48,24 @@
 
                     <fieldset>
                         <legend>Mensagem</legend>
-                        <label><input type="radio" name="finalidade" value="duvida"> Dúvidas</label>
-                        <label><input type="radio" name="finalidade" value="reserva"> Reserva</label>
-                        <label><input type="radio" name="finalidade" value="sugestao"> Sugestão</label>
+
+                        <label for="duvida"><input type="radio" id="duvida" name="finalidade" value="duvida">
+                            Dúvidas</label>
+                        <label for="reserva"><input type="radio" id="reserva" name="finalidade" value="reserva">
+                            Reserva</label>
+                        <label for="sugestao"><input type="radio" id="sugestao" name="finalidade" value="sugestao">
+                            Sugestão</label>
                     </fieldset>
 
                     <label for="mensagem">Mensagem</label>
                     <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite aqui" required></textarea>
 
-                    <label class="newsletter">
-                        <input type="checkbox" name="newsletter"> Quero receber a newsletter mensal
+
+                    <label class="newsletter" for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter"> Quero receber a newsletter mensal
                     </label>
 
-                    <button type="submit">Enviar</button>
+                    <button type="submit">Enviar Mensagem</button>
                 </form>
             </div>
         </section>
@@ -73,7 +79,7 @@
                 </figure>
                 <figure>
                     <img src="imagens/heitor.jpg" alt="Perfil do Funcionário">
-                    <figcaption>Heitor Merino - Instrutor</figcaption>
+                    <figcaption>Heitor Moreira - Instrutor</figcaption>
                 </figure>
                 <figure>
                     <img src="imagens/vicente.jpg" alt="Perfil do Funcionário">
@@ -83,9 +89,8 @@
         </section>
     </main>
 
-
     <footer>
-        <p>©2026 Companhia de Rafting em Corredeiras | Pedro Pereira</p>
+        <p>©2026 Rio Abaixo Rafting | Pedro Pereira</p>
         <nav class="redes-sociais">
             <a href="https://facebook.com" target="_blank">
                 <img src="imagens/facebook-logo.svg" alt="Ícone do Facebook">
